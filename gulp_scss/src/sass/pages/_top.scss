@@ -1,0 +1,12 @@
+#top {
+
+  p {
+    color: red;
+  }
+  @media(max-width:$breakpoint_pc) {
+    p {
+    color: peachpuff;
+    }
+  }
+
+}//End.top

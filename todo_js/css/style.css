@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+
+.main h1 {
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.main form {
+  border-top: 1px solid #FFCC33	;
+  padding: 30px 0;
+}
+
+.main form .tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.main form .tabs label {
+  text-align: center;
+  width: 25%;
+  border-radius: 5px;
+  border: 1px solid #FFCC33	;
+  padding: 5px;
+  position: relative;
+}
+
+.main form .tabs label.active {/* タブ切り替え時に背景色を変える */
+  background: #FFCC33	;
+}
+
+.main form .tabs label:nth-of-type(n + 2){
+  margin-left: 5px;
+}
+
+.main form .tabs label input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0
+}
+
+.main form .inputs {
+  width: 40%;
+  margin: 20px auto 30px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.main form .inputs input {
+  border: 1px solid #FFCC33;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.main form .inputs input[type="text"]{
+  width: 65%;
+  padding: 5px;
+  font-size: 18px;
+}
+.main form .inputs input[type="button"]{
+  width: 30%;
+  padding: 5px;
+  display: inline-block;
+  background-color: #FFCC33	;
+}
+
+.main .todos {
+  width: 100%;
+}
+
+.main .todos tr th,
+.main .todos tr td{
+  padding: 8px;
+}
+
+.main .todos th {
+  background-color: #FFCC33	;
+  border-radius: 3px;
+}
+
+.main .todos .todo td{
+  border-bottom: 1px dotted #000;
+  text-align: center;
+}
+
+.main .todos .todo td button {
+  outline: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+.main .todos .todo button.remove{
+  color: red;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/ress.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>ピュアJSでtodoアプリを作ってみた</title>
+</head>
+<body>
+  <section class="main">
+    <h1>My-Todos</h1>
+    <form action="#" name="form">
+      <div class="tabs">
+        <label class="all active">all<input type="radio" name="state" checked="checked"></label>
+        <label class="working">working<input type="radio"name="state"></label>
+        <label class="compuleted">completed<input type="radio"name="state"></label>
+      </div>
+      <div class="inputs"><input id="todo-input" type="text"><input id="add-todo-btn" type="button" value="ADD"></div>
+    </form>
+    <table class="todos"> 
+      <thead>
+        <tr class="head">
+          <th>ID</th>
+          <th>CONTENT</th>
+          <th>STATE</th>
+          <th>REMOVE</th>
+        </tr>
+      </thead>
+      <tbody id="todo-body">
+      </tbody>
+    </table>
+  </section>
+  <script src="/js/script.js"></script>
+</body>
+</html>

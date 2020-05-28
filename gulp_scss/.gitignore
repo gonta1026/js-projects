@@ -1,0 +1,17 @@
+node_modules/
+
+#コンパイル前画像
+src/**/*.png
+src/**/*.jpg
+src/**/*.gif
+src/**/*.jpeg
+src/**/*.svg
+
+#コンパイル後画像
+static/**/*.png
+static/**/*.jpg
+static/**/*.gif
+static/**/*.jpeg
+static/**/*.svg
+
+package-lock.json

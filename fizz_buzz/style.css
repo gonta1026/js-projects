@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+.test {
+  width: 70%;
+  max-width: 350px;
+  margin: 60px auto 0;
+}
+
+.test h1 {
+  text-align: center;
+}
+
+.test form {
+  margin-top: 30px;
+}
+.test form > div {
+  display: flex;
+  justify-content: space-between;
+}
+.test form > div > label {
+  width: 80px;
+  display: inline-block;
+}
+.test form > div:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+.test form div .input {
+  border: 1px solid rgb(5, 3, 3);
+  padding: 3px;
+  text-align: center;
+  width: 70%;
+}
+.test form .submit {
+  border: 1px solid rgb(5, 3, 3);
+  width: 100px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.test .result {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.test .result li {
+  text-align: right;
+  width: 100%;
+  margin: 0px auto 0 -140px;
+}
+.test .result li.error {
+  margin: 0;
+}
+.test .result li:nth-of-type(n + 2){
+  margin-top: 5px;
+}
+.test .result .fizz {
+  color: green;
+}
+.test .result .buzz {
+  color: blue;
+}
+.test .result .fizz-buzz,
+.test .result .error {
+  color: red;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+
+
